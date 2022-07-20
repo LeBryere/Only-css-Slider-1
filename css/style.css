@@ -2,7 +2,7 @@
 
 :root {
    --width: 80%;
-   --time: 12S;
+   --time: 12s;
    --drop_shadow_offset_x: 30px;
    --drop_shadow_offset_y: 60px;
    --drop_shadow_blur_radius: 20px;
@@ -16,7 +16,7 @@
 }
 
 body {
-   background-color: rgb(24, 23, 27);
+   background-color: rgb(24, 23, 28);
    overflow: hidden;
 }
 
