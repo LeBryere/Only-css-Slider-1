@@ -1,4 +1,4 @@
-# [LeBryere - 3D menu](https://lebryere.github.io/only-css-slider-1.github.io/)
+# [LeBryere - Only css Slider](https://lebryere.github.io/only-css-slider-1.github.io/)
 
 ## Preview
 
