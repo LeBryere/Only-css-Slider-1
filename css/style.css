@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+:root {
+   --width: 80%;
+   --time: 12S;
+   --drop_shadow_offset_x: 30px;
+   --drop_shadow_offset_y: 60px;
+   --drop_shadow_blur_radius: 20px;
+   --drop_shadow_blur_color: rgba(0, 0, 0, .8);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: rgb(24, 23, 27);
+   overflow: hidden;
+}
+
+.content_slider {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.slider {
+   width: var(--width);
+   height: 50%;
+   margin-top: 5%;
+   display: flex;
+}
+
+.mask {
+   position: relative;
+   width: 100%;
+   height: 50%;
+}
+
+.slider li {
+   width: 100%;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+}
+
+.slider li div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(10px);
+}
+
+
+img {
+   width: var(--width);
+   -webkit-filter: drop-shadow(var(--drop_shadow_offset_x) var(--drop_shadow_offset_y) var(--drop_shadow_blur_radius) var(--drop_shadow_blur_color));
+   filter: drop-shadow(var(--drop_shadow_offset_x) var(--drop_shadow_offset_y) var(--drop_shadow_blur_radius) var(--drop_shadow_blur_color));
+}
+
+
+.slider li.animation_image_1 {
+   animation: loop_1 var(--time) ease-out infinite;
+}
+
+
+.slider li.animation_image_2 {
+   animation: loop_2 var(--time) ease-out infinite;
+}
+
+
+.slider li.animation_image_3 {
+   animation: loop_3 var(--time) ease-out infinite;
+}
+
+
+.slider li.animation_image_4 {
+   animation: loop_4 var(--time) ease-out infinite;
+}
+
+
+.slider li.animation_image_5 {
+   animation: loop_5 var(--time) ease-out infinite;
+}
+
+/* 
+.slider li.animation_image_6 {
+   animation: loop_6 var(--time) ease-out infinite;
+} */
+
+.slider:hover li {
+   animation-play-state: paused;
+}
+
+.slider:hover li::before,
+.slider:hover li::after {
+   position: absolute;
+   width: 50%;
+   font-family: 'Mrs Saint Delafield', cursive;
+   color: #c9ab81;
+   text-align: center;
+   opacity: 1;
+   animation: opacity 1.5s ease-out;
+}
+
+.slider:hover li::before {
+   content: 'designed by:';
+   top: 93%;
+   margin-left: -8%;
+   font-size: clamp(1.25rem, 5vw, 3rem);
+   text-shadow: 5px 5px 3px rgb(0, 0, 0);
+   z-index: -2;
+}
+
+.slider:hover li::after {
+   content: 'Benitobag.com';
+   top: 100%;
+   font-size: clamp(1.25rem, 8vw, 6rem);
+   text-shadow: 7px 10px 6px rgb(0, 0, 0);
+   z-index: -1;
+}
+
+@keyframes opacity {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+/* 4 images 
+@keyframes loop_1 {
+   0% {
+      right: 0px;
+   }
+
+   5% {
+      right: 0px;
+   }
+
+   20% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   25% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   27% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   50% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   92% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   96% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   100% {
+      right: 0px;
+      opacity: 1;
+   }
+}
+
+@keyframes loop_2 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   21% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   25% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   30% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   45% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   50% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   52% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_3 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   46% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   50% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   55% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   70% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   75% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   77% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_4 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   71% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   75% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   80% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   95% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   100% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+}*/
+
+/* 5 images */
+@keyframes loop_1 {
+   0% {
+      right: 0px;
+   }
+
+   4% {
+      right: 0px;
+   }
+
+   16% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   20% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   21% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   50% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   92% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   96% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   100% {
+      right: 0px;
+      opacity: 1;
+   }
+}
+
+@keyframes loop_2 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   16% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   20% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   24% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   36% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   40% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   41% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_3 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   36% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   40% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   44% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   56% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   60% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   61% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_4 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   56% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   60% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   64% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   76% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   80% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   81% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_5 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   76% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   80% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   84% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   96% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   100% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+}
+
+/* 6 images 
+@keyframes loop_1 {
+   0% {
+      right: 0px;
+   }
+
+   3% {
+      right: 0px;
+   }
+
+   13% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   16% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   17% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   50% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   92% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   96% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   100% {
+      right: 0px;
+      opacity: 1;
+   }
+}
+
+@keyframes loop_2 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   13% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   16% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   19% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   29% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   32% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   33% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_3 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   30% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   33% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   36% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   46% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   49% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   50% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_4 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   47% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   50% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   53% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   63% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   66% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   67% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+
+@keyframes loop_5 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   64% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   67% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   70% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   80% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   83% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+
+   84% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+
+   100% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+      z-index: -1;
+   }
+}
+@keyframes loop_6 {
+   0% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   81% {
+      right: calc(var(--width) * -1);
+      opacity: 0;
+   }
+
+   84% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   87% {
+      right: 0px;
+      opacity: 1;
+   }
+
+   97% {
+      right: 0px;
+      opacity: 1;
+      z-index: 0;
+   }
+
+   100% {
+      right: var(--width);
+      opacity: 0;
+      z-index: 0;
+   }
+}
+*/
