@@ -2,7 +2,7 @@
 
 ## Preview
 
-[![Resume Preview](https://raw.githubusercontent.com/LeBryere/only-css-slider-1/master/preview.png)](https://lebryere.github.io/only-css-slider-1.github.io/)
+[![Resume Preview](preview.png)](https://lebryere.github.io/only-css-slider-1.github.io/)
 
 **[View Live Preview](https://lebryere.github.io/only-css-slider-1.github.io/)**
 
