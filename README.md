@@ -20,7 +20,7 @@
 
 ### Basic Usage
 
-After downloading, simply edit the HTML and CSS files included with `root` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+The following code snippet contains an HTML document that displays a simple slideshow. The slideshow places the slider in a div element, which includes the mask and ul elements where the individual slides are located. Each slide is wrapped in an li element that contains a div element with an image. The image source points to a local file and also includes an alt attribute that provides a brief description of the image. The last slide is commented out and does not appear in the slideshow.
 
 ### Color variables
 ```css
