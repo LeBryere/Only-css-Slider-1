@@ -1,4 +1,4 @@
-# [Only css Slider](https://lebryere.github.io/only-css-slider-1/)
+# [Only css Slider](https://lebryere.github.io/only_css_slider_1/)
 
 ## Browser Support
 
@@ -8,13 +8,13 @@
 
 ## Preview
 
-[![Resume Preview](preview.png)](https://lebryere.github.io/only-css-slider-1/)
+[![Resume Preview](preview.png)](https://lebryere.github.io/only_css_slider_1/)
 
-**[View Live Preview](https://lebryere.github.io/only-css-slider-1/)**
+**[View Live Preview](https://lebryere.github.io/only_css_slider_1/)**
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://github.com/LeBryere/only-css-slider-1.github.io/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://github.com/LeBryere/only_css_slider_1.github.io/blob/master/LICENSE)
 
 ## Usage
 
@@ -36,4 +36,4 @@ After downloading, simply edit the HTML and CSS files included with `root` direc
 
 ## Copyright and License
 
-Copyright 2022 Lebryere. Code released under the[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://github.com/LeBryere/only-css-slider-1.github.io/blob/master/LICENSE) license.
+Copyright 2022 Lebryere. Code released under the[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://github.com/LeBryere/only_css_slider_1.github.io/blob/master/LICENSE) license.
