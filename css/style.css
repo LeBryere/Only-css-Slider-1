@@ -3,10 +3,10 @@
 :root {
    --width: 80%;
    --time: 12s;
-   --drop_shadow_offset_x: 30px;
-   --drop_shadow_offset_y: 60px;
-   --drop_shadow_blur_radius: 20px;
-   --drop_shadow_blur_color: rgba(0, 0, 0, .8);
+   --drop_shadow_offset_x: 20px;
+   --drop_shadow_offset_y: 80px;
+   --drop_shadow_blur_radius:40px;
+   --drop_shadow_blur_color: rgba(0, 0, 0, .85);
 }
 
 * {
@@ -95,8 +95,8 @@ img {
    animation-play-state: paused;
 }
 
-.slider:hover li::before,
-.slider:hover li::after {
+.slider li::before,
+.slider li::after {
    position: absolute;
    width: 50%;
    font-family: 'Mrs Saint Delafield', cursive;
@@ -106,21 +106,22 @@ img {
    animation: opacity 1.5s ease-out;
 }
 
-.slider:hover li::before {
+.slider li::before {
    content: 'designed by:';
    top: 93%;
-   margin-left: -8%;
+   margin-left: 2%;
    font-size: clamp(1.25rem, 5vw, 3rem);
    text-shadow: 5px 5px 3px rgb(0, 0, 0);
    z-index: -2;
 }
 
-.slider:hover li::after {
+.slider li::after {
    content: 'Benitobag.com';
    top: 100%;
    font-size: clamp(1.25rem, 8vw, 6rem);
    text-shadow: 7px 10px 6px rgb(0, 0, 0);
    z-index: -1;
+   
 }
 
 @keyframes opacity {
