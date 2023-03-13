@@ -22,7 +22,7 @@
 
 The following code snippet contains an HTML document that displays a simple slideshow. The slideshow places the slider in a div element, which includes the mask and ul elements where the individual slides are located. Each slide is wrapped in an li element that contains a div element with an image. The image source points to a local file and also includes an alt attribute that provides a brief description of the image. The last slide is commented out and does not appear in the slideshow.
 
-### Color variables
+### Variables
 ```css
 :root{
    --width: 80%;
