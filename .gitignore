@@ -1,3 +1,4 @@
+.gitignore
 loop_calc.xlsx
 node_modules/
 .DS_Store
