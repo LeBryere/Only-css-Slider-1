@@ -14,7 +14,7 @@
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://github.com/LeBryere/only_css_slider_1.github.io/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://raw.githubusercontent.com/LeBryere/only_css_slider_1.github.io/master/LICENSE)
 
 ## Usage
 
@@ -36,4 +36,4 @@ The following code snippet contains an HTML document that displays a simple slid
 
 ## Copyright and License
 
-Copyright 2022 Lebryere. Code released under the[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://github.com/LeBryere/only_css_slider_1.github.io/blob/master/LICENSE) license.
+Copyright 2022 Lebryere. Code released under the[![GitHub license](https://img.shields.io/badge/license-MIT-green?&style=plastic)](https://raw.githubusercontent.com/LeBryere/only_css_slider_1.github.io/master/LICENSE) license.
