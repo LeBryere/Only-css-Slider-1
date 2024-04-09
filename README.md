@@ -1,4 +1,4 @@
-# [Only css Slider](https://lebryere.github.io/only_css_slider_1/)
+# [Only css - Slider](https://lebryere.github.io/only_css_slider_1/)
 
 ## Browser Support
 
