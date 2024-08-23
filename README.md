@@ -1,4 +1,4 @@
-# [Only css - Slider](https://lebryere.github.io/Only-css-Slider_1/)
+# [Only css - Slider](https://lebryere.github.io/Only-css-Slider-1/)
 
 ## Browser Support
 
@@ -8,9 +8,9 @@
 
 ## Preview
 
-[![Resume Preview](preview.png)](https://lebryere.github.io/Only-css-Slider_1/)
+[![Resume Preview](preview.png)](https://lebryere.github.io/Only-css-Slider-1/)
 
-**[View Live Preview](https://lebryere.github.io/Only-css-Slider_1/)**
+**[View Live Preview](https://lebryere.github.io/Only-css-Slider-1/)**
 
 ## Status
 
